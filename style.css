@@ -133,7 +133,7 @@ nav ul li a {
 
 @media (max-width: 480px) {
     .produto {
-        width: 45%; /* Para telas pequenas, exibe 2 produtos por linha */
+        width: 100%; /* Para telas muito pequenas, exibe 1 produto por linha */
     }
 }
 
