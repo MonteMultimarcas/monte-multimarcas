@@ -70,7 +70,7 @@ nav ul li a {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 18%;
+    width: 18%; /* Ajustando a largura para desktop */
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
@@ -125,17 +125,24 @@ nav ul li a {
 }
 
 /* Responsividade para telas médias e pequenas */
-@media (max-width: 768px) {
-    /* Ajustando a largura dos produtos para telas médias (tablets) */
+@media (max-width: 1024px) {
+    /* Para telas médias, exibe 3 produtos por linha */
     .produto {
-        width: 45%; /* Para telas médias, exibe 2 produtos por linha */
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Para telas menores (tablets), exibe 2 produtos por linha */
+    .produto {
+        width: 45%;
     }
 }
 
 @media (max-width: 480px) {
-    /* Ajustando a largura dos produtos para telas pequenas (celulares) */
+    /* Para telas pequenas (celulares), exibe 1 produto por linha */
     .produto {
-        width: 100%; /* Para telas muito pequenas, exibe 1 produto por linha */
+        width: 90%; /* Ajustando para exibir o produto maior no celular */
     }
 }
 
